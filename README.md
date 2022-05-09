@@ -1,6 +1,6 @@
 # OBA Junior Chatbot
 
-![Student vacature bank](...)
+![OBA Junior Chatbot](...)
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
