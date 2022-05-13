@@ -1,6 +1,6 @@
 # OBA Junior Chatbot
 
-![OBA Junior Chatbot](...)
+![OBA Junior Chatbot](https://github.com/cmda-minor-web-cases/oba-junior-chatbot/blob/main/assets/oba-junior-chatbot.jpg?raw=true)
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
