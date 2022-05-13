@@ -35,7 +35,9 @@ Ontwerp en ontwikkel een chatbot voor OBA Junior, die jeugdige gebruikers (4 - 8
 
 ### User stories
 1 Als jeugdige gebruiker wil ik op speelse wijzen leren wat een chatbot is, zodat ik deze kan gebruiken om items uit de collectie van de OBA te vinden.
+
 2 Als jeugdige gebruiker wil ik, samen met mijn moeder en/of vader, aan de hand van het stellen van vragen aan de chatbot, kinderboeken uit de collectie van de OBA vinden, zodat we het samen kunnen lezen.  
+
 3 Als jeugdige gebruiker wil ik, samen met mijn vader en/of moeder, mijn interesses aan een chatbot kunnen vertellen, zodat deze mij kan helpen een passende OBA activiteit te vinden.  
 
 ## Data
