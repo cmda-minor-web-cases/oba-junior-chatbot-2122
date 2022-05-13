@@ -41,7 +41,8 @@ Ontwerp en ontwikkel een chatbot voor OBA Junior, die jeugdige gebruikers (4 - 8
 3 Als jeugdige gebruiker wil ik, samen met mijn vader en/of moeder, mijn interesses aan een chatbot kunnen vertellen, zodat deze mij kan helpen een passende OBA activiteit te vinden.  
 
 ## Data
-De OBA maakt gebruik van de OBI4wan chat engine waarvoor studenten een crah course krijgen aangeboden. De OBA collectie is via een API te ontsluiten.
+De OBA maakt gebruik van de OBI4wan chat engine waarvoor studenten een crah course krijgen aangeboden.  
+De OBA collectie is via een API te ontsluiten.
 
 ## Planning
 In de eerste week van de meesterproef is een briefing met de opdrachtgever en begeleiders. Wekelijks wordt aan de opdrachtgever een prototype gedemonstreerd en de volgende stappen besproken. Tussentijds kunnen via Teams vragen gesteld worden.
