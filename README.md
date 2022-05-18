@@ -1,6 +1,6 @@
 # Chatbot van de toekomst
 
-![Chatbot van de toekomst](https://github.com/cmda-minor-web-cases/oba-junior-chatbot/blob/main/assets/oba-junior-chatbot.jpg?raw=true)
+![How-an-AI-Chatbot-Works-Featured-Image](https://user-images.githubusercontent.com/16196640/169023877-22d6ee0a-4d9e-4bce-abcc-bccd8ef6f506.png)
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
@@ -21,7 +21,11 @@ Wat als we kinderen en jongeren al vanaf de eerste digitale kennismaking zoeken 
 
 Binnen de OBA en ontwerplab maken we steeds meer gebruik van chatbots/human agents om zoeken en vragen digitaal op te vangen. Voor volwassen is de ux, ui en logica heel anders dan voor kinderen. Voor oba junior ontwikkelen jullie een chatbot die specifiek op jeugd (4-8) is gericht qua ux, ui, botlogica en inhoud.
 
+![oba junior _ mokcup](https://user-images.githubusercontent.com/16196640/169024369-4bccc642-c396-4f93-9fbe-e6d429ab8eb8.png)
+
 [Obajunior.nl](https://www.obajunior.nl/) is de online bieb omgeving voor de jongste oba gebruikers. Het is dé manier om de bieb in huis te krijgen, zelfs voor je misschien ooit naar de bieb bent geweest. De droom: op de obajunior ervaar je thuis wat de bieb je kan bieden, speel je met de collectie, zijn je ouders/verzorgers betrokken.
+
+![logo 66b1d35](https://user-images.githubusercontent.com/16196640/169024606-1bbaee6e-33fa-4fb4-a853-3b10edd5f43a.png)
 
 ## Opdrachtgever
 Het ontwerplab is een samenwerking tussen de oba, de gemeente amsterdam en ontwerp collectief Idiotes. Samen werken hier ontwerpers, onderzoekers en ontwikkelaars aan producten en diensten die zorgen dat alle Amsterdammers deel kunnen nemen aan de digitale samenleving, verbonden kunnen zijn met hun eigen buurt, stad en het internet en de mogelijkheden hebben om hun kennis en digitale vaardigheden te vergroten.
