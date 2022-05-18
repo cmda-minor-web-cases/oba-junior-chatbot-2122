@@ -35,7 +35,7 @@ Binnen het ontwerplab zet oba.start zich specifiek in voor de jongste bieb bezoe
 Product Owners: 
 Leonore Snoek, senior service designer @ oba ontwerplab. Hiervoor UX coach @ growth tribe & civic service designer bij NYC Mayor's office for economic opportunity. 
 
-Fatma Genc, 
+Fatma Genc, programmamaker digitale geletterdheid @ oba. Hiervoor community manager en merkstrateeg voor oa WeTransfer, Mindvalley, samengewerkt met oa What Design Can Do, Design Indaba, Art Basel.
 
 ## Design challenge
 Ontwerp en ontwikkel een chatbot voor OBA Junior, die jeugdige gebruikers (rond 6 jaar), helpt informatie uit de OBA collectie te onstluiten.
