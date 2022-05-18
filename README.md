@@ -32,10 +32,10 @@ Het ontwerplab is een samenwerking tussen de oba, de gemeente amsterdam en ontwe
 
 Binnen het ontwerplab zet oba.start zich specifiek in voor de jongste bieb bezoekers. De volgende generatie internet gebruikers. Hoe kunnen we een omgeving ontwerpen die zorgt dat zij toegang en competenties hebben om de kansen en mogelijkheden van de digitale stad te ervaren en gebruiken.
 
-Product Owners: 
-Leonore Snoek, senior service designer @ oba ontwerplab. Hiervoor UX coach @ growth tribe & civic service designer bij NYC Mayor's office for economic opportunity. 
+Product Owners:  
+**Leonore Snoek**, senior service designer @ oba ontwerplab. Hiervoor UX coach @ growth tribe & civic service designer bij NYC Mayor's office for economic opportunity. 
 
-Fatma Genc, programmamaker digitale geletterdheid @ oba. Hiervoor community manager en merkstrateeg voor oa WeTransfer, Mindvalley, samengewerkt met oa What Design Can Do, Design Indaba, Art Basel.
+**Fatma Genc**, programmamaker digitale geletterdheid @ oba. Hiervoor community manager en merkstrateeg voor oa WeTransfer, Mindvalley, samengewerkt met oa What Design Can Do, Design Indaba, Art Basel.
 
 ## Design challenge
 Ontwerp en ontwikkel een chatbot voor OBA Junior, die jeugdige gebruikers (rond 6 jaar), helpt informatie uit de OBA collectie te onstluiten.
