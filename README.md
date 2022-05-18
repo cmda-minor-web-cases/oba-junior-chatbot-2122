@@ -57,9 +57,13 @@ In de eerste week van de meesterproef is een briefing met de opdrachtgever en be
 Dinsdag 24 mei, om 10:30 is de Kick-off & briefing bij de opdrachtgever in de OBA Oosterdok.
 In de week van 30 mei wordt de OBI4wan crashcourse gepland
 
-Start op maandag 23 mei met voor onderzoek: 
-- Welke kinderchatbots bestaan er al? Hoe pakken zij dit vraagstuk aan.
-- Wat betekent het om kind-centraal te ontwerpen? (inspriatie: code voor kinderrechten)
+Op maandag 23 mei starten met voor onderzoek: 
+- Welke kinderchatbots bestaan er al? Hoe pakken zij deze ontwerpogave aan.
+- Wat betekent het om kind-centraal te ontwerpen? 
+
+Inspriatie:
+Code voor kinderrechten https://codevoorkinderrechten.nl/ &
+Ongoing onderzoek naar UI populaire kidnerapps https://drive.google.com/file/d/11H6T_vKnFOgVEC2nZplQmlyZ0JFBWLhS/view?usp=sharing
 
 ## Licentie
 
