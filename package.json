@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/basv1996/oba-junior-chatbot/issues"
   },
-  "homepage": "https://github.com/basv1996/oba-junior-chatbot#readme"
+  "homepage": "https://github.com/basv1996/oba-junior-chatbot#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
