@@ -17,9 +17,30 @@ button {
     display: flex;
     width: 100%;
     height: fit-content;
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: 1rem 1rem 0 0;
-    justify-content: center;
     background-color: rgb(226, 226, 226);
     font-weight: bold;
+}
+
+#chatbot header nav {
+    width: 100%;
+}
+
+#chatbot header ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#chatbot header ul li:first-of-type {
+    width: 1rem;
+    height: 1rem;
+    padding: 2rem;
+    background-color: azure;
+    border-radius: 50%;
+}
+
+#chatbot header ul li:last-of-type {
+    margin: 0 auto;
 }
