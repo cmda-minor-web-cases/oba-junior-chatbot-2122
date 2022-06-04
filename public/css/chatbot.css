@@ -1,48 +1,25 @@
-li {
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
-    display: flex;
-    flex-direction: column;
+button {
     padding: 1rem;
-    border-radius: 1rem;
-    font-size: 1.1rem;
-    position: relative;
-    margin-top: 1rem;
-}
-
-li:first-of-type {
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-li span:first-of-type {
-    font-weight: bold;
-    margin-bottom: .5rem;
-}
-
-form label {
-    font-weight: bold;
-}
-
-input {
-    padding: 1rem;
-    width: 60%;
-    margin-left: auto;
-    border: 0px;
-    font-size: 1.1rem;
-    background-color: rgb(243, 243, 243);
-}
-
-form span {
-    display: flex;
-    font-weight: 400!important;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.monkey {
     position: absolute;
-    left: 0;
-    top: -3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+#chatbot {
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.327);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+#chatbot header {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+    font-weight: bold;
 }
