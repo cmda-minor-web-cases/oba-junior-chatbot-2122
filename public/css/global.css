@@ -1,5 +1,5 @@
 :root {
-    --bg-color: rgb(247, 247, 247);
+    --bg-color: rgb(255, 255, 255);
 }
 
 *, *::before, *::after {
@@ -24,6 +24,19 @@ main {
 
 ul {
     list-style: none;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.1);
+}
+
+header nav ul {
+    padding: .25rem 1rem 0;
+}
+
+header img {
+    width: 6.35rem;
 }
 
 .hidden {
