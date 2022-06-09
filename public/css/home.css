@@ -24,30 +24,21 @@
 .wrapper ul:first-of-type {
     display: flex;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
-}
-
-.wrapper ul:first-of-type a {
-    margin-right: 1.5rem;
 }
 
 .wrapper ul:first-of-type a img {
     border-radius: 1rem;
-    height: 13rem;
-    aspect-ratio: 10/10;
-    margin-bottom: .5rem;
+    width: 13.38rem;
+    aspect-ratio: 4/4;
+    margin-right: 1.5rem;
 }
 
 #controls {
-    position: absolute;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    right: 0;
-    left: 0;
-    top: 2rem;
-    bottom: 0;
+    margin-top: 1rem;
 }
 
 #controls li i {
