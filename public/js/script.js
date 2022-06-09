@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll('#controls li i')
 const slider = document.querySelector('.slider-wrapper ul:first-of-type')
+const chatbot = document.querySelector('.chatbutton')
 
 buttons[0].classList.add('disable')
 
@@ -23,6 +24,11 @@ buttons.forEach(button => {
 
         console.log(slider.scrollLeft)
     })
+})
+
+chatbot.addEventListener('click', () => {
+    chatbot.classList.add('chatbot')
+    chatbot.classList.remove('chatbutton')
 })
 
 
