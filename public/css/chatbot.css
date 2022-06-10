@@ -1,6 +1,7 @@
 :root {
     --purple: #773278;
     --blue: #48A0D5;
+    --green: #439752;
 }
 
 .chatbutton {
@@ -28,9 +29,44 @@
     bottom: 0;
     left: 0;
     margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 1rem;
     transform-origin: right bottom;
     animation: open 300ms ease;
+}
+
+.firstChoices {
+    display: flex;
+}
+
+.firstChoices button {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    transition: 200ms;
+    aspect-ratio: 1/1;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    box-shadow: -10px 10px 5px rgba(128, 128, 128, 0.358), -10px 10px 0px white;
+    transform-origin: left bottom;
+    cursor: pointer;
+}
+
+.firstChoices button:active {
+    transform: scale(.9);
+    box-shadow: 0px 0px 0px white;
+}
+
+.firstChoices button:first-of-type {
+    background-color: var(--green);
+}
+
+.firstChoices button:last-of-type {
+    background-color: var(--purple);
 }
 
 @keyframes open {

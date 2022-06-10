@@ -1,6 +1,27 @@
 const buttons = document.querySelectorAll('#controls li i')
 const slider = document.querySelector('.slider-wrapper ul:first-of-type')
 const chatbot = document.querySelector('.chatbutton')
+const talk = document.querySelector('#talk')
+
+
+let speech = new SpeechSynthesisUtterance()
+speech.lang = 'nl'
+speech.rate = 1
+speech.volume = 1
+speech.pitch = 1.5
+
+const firstChoices = document.querySelectorAll('.firstChoices button')
+
+console.log(firstChoices)
+
+firstChoices.forEach(choice => {
+    choice.addEventListener('mouseover', (e) => {
+        speech.text = e.target.textContent
+
+        window.speechSynthesis.speak(speech)
+    })
+})
+
 
 buttons[0].classList.add('disable')
 
@@ -26,10 +47,7 @@ buttons.forEach(button => {
     })
 })
 
-chatbot.addEventListener('click', () => {
-    chatbot.classList.add('chatbot')
-    chatbot.classList.remove('chatbutton')
-})
+
 
 
 
