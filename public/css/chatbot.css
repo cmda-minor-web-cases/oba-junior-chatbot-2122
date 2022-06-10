@@ -37,6 +37,15 @@
     animation: open 300ms ease;
 }
 
+.inner-chatbot {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 .firstChoices {
     display: flex;
 }
@@ -67,6 +76,19 @@
 
 .firstChoices button:last-of-type {
     background-color: var(--purple);
+}
+
+.close {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    background-color: white;
+    border: 0px solid transparent;
+    color: var(--purple);
+    padding: .5rem .8rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
 @keyframes open {
