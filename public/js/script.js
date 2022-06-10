@@ -3,7 +3,6 @@ const slider = document.querySelector('.slider-wrapper ul:first-of-type')
 const chatbot = document.querySelector('.chatbutton')
 const talk = document.querySelector('#talk')
 
-
 let speech = new SpeechSynthesisUtterance()
 speech.lang = 'nl'
 speech.rate = .8
