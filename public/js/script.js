@@ -6,7 +6,7 @@ const talk = document.querySelector('#talk')
 
 let speech = new SpeechSynthesisUtterance()
 speech.lang = 'nl'
-speech.rate = 1
+speech.rate = .8
 speech.volume = 1
 speech.pitch = 1.5
 

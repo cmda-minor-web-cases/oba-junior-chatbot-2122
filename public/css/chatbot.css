@@ -53,14 +53,14 @@
 .firstChoices button {
     padding: 2rem;
     border-radius: 1rem;
-    margin: 0 1rem;
+    margin: 0 2rem;
     transition: 200ms;
     aspect-ratio: 1/1;
     font-weight: bold;
     color: white;
     font-size: 1.5rem;
-    border: 1px solid transparent;
-    box-shadow: -10px 10px 5px rgba(128, 128, 128, 0.358), -10px 10px 0px white;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: -10px 10px 5px rgba(128, 128, 128, 0.358), -10px 10px 0px white, -10px 10px 2px 2px rgba(0, 0, 0, 0.169);
     transform-origin: left bottom;
     cursor: pointer;
 }
