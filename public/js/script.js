@@ -2,12 +2,42 @@ const buttons = document.querySelectorAll('#controls li i')
 const slider = document.querySelector('.slider-wrapper ul:first-of-type')
 const chatbot = document.querySelector('.chatbutton')
 const talk = document.querySelector('#talk')
+const text = document.querySelector('#text')
+const zelf = document.querySelector('#zelf')
 
+const typewriter = new Typewriter(text, {
+    loop: false,
+    delay: 50
+})
+    
 let speech = new SpeechSynthesisUtterance()
 speech.lang = 'nl'
-speech.rate = .8
+speech.rate = .75
 speech.volume = 1
 speech.pitch = 1.5
+
+window.addEventListener('load', () => {
+    speech.text = 'Hoi! Wil je zelf gaan lezen of wil je dat iemand het voor je voorleest?'
+
+    speechSynthesis.speak(speech)
+
+    typewriter
+    .typeString('Hoi! Wil je zelf gaan lezen of wil je dat iemand het voor je voorleest?')
+    .start()
+})
+
+zelf.addEventListener('click', () => {
+    typewriter
+        .deleteAll(1)
+        .typeString('Wat leuk dat je zelf gaat lezen! Waar wil je over gaan lezen?')
+        .start()
+
+    setTimeout(() => {
+        speech.text = 'Wat leuk dat je zelf gaat lezen! Waar wil je over gaan lezen?'
+
+        speechSynthesis.speak(speech)
+    }, 1000)
+})
 
 const firstChoices = document.querySelectorAll('.firstChoices button')
 

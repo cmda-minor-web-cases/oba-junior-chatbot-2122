@@ -4,6 +4,10 @@
     --green: #439752;
     --green-shadow: #1d5227;
     --pruple-shadow: #331534;
+
+    --monkey-body: #D46A2D;
+    --monkey-shadow: #E79E72;
+    --monkey-mouth: #F2C8AC;
 }
 
 .chatbutton {
@@ -93,6 +97,152 @@
     border-radius: 50%;
     font-size: 1.3rem;
     cursor: pointer;
+}
+
+.chatBalloon {
+    position: absolute;
+    bottom: 5rem;
+    left: 40%;
+}
+
+.speaker {
+    background-color: var(--monkey-body);
+    width: fit-content;
+    position: absolute;
+    z-index: 200;
+    color: white;
+    border-radius: 4rem;
+    padding: .3rem 1rem;
+    top: -1rem;
+    left: 1rem;
+    font-weight: bold;
+}
+
+#text {
+    font-size: 1.2rem;
+    background-color: white;
+    box-shadow: 0 0 0 4px var(--monkey-body);
+    padding: 1.5rem 2rem;
+    position: relative;
+    border-radius: 10rem;
+    width: 30rem;
+    
+}
+
+#text::after {
+    content: '';
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid var(--monkey-body);
+    left: -1.3rem;
+    top: 30%;
+    width: 0;
+    height: 0;
+}
+
+/* css for the character */
+.character {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
+.head {
+    width: 6rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: var(--monkey-body);
+    position: absolute;
+    top: -5rem;
+}
+
+.left_ear {
+    background-color: var(--monkey-shadow);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1rem;
+    box-shadow: 0 0 0 7px var(--monkey-body);
+}
+
+.right_ear {
+    background-color: var(--monkey-shadow);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -1rem;
+    box-shadow: 0 0 0 7px var(--monkey-body);
+}
+
+.eyes_area {
+    background-color: var(--monkey-shadow);
+    width: 4rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+.eye_left {
+    background-color: #975B30;
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+.eye_right {
+    background-color: #975B30;
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+}
+
+.mouth_area {
+    background-color: var(--monkey-mouth);
+    height: 2.5rem;
+    width: 4rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+.mouth {
+    width: 3rem;
+    height: 1.5rem;
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    border: 2px solid #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 50%/0 0 50% 50%
+}
+
+.body {
+    width: 6rem;
+    height: 5rem;
+    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0% ;
+    background-color: var(--monkey-body);
+}
+
+.belly {
+    background-color: var(--monkey-shadow);
+    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0% ;
+    height: 3rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
 }
 
 @keyframes open {

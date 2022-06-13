@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/chatbot.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
     <script src="/js/script.js" defer></script>
-    <script src="/js/chatbot.js" defer></script>
 </head>
 <body>
     <%- include('../partials/header') %> 
@@ -58,6 +58,41 @@
             </div>
         </section>
     </main>
-    <%- include('../partials/chatbot') %> 
+    <section class="chatbutton">
+    
+    </section>
+    <section class="chatbot">
+        <section class="inner-chatbot">
+            <button class="close"><i class="fa fa-close"></i></button>
+            <span class="firstChoices">
+                <button id="zelf">Zelf lezen</button>
+                <button id="voor">Voorlezen</button>
+            </span>
+        </section>
+    
+        <div class="character">
+            <div class="head">
+                <div class="left_ear"></div>
+                <div class="right_ear"></div>
+                <div class="eyes_area">
+                    <div class="eye_left"></div>
+                    <div class="eye_right"></div>
+                </div>
+                <div class="mouth_area">
+                    <div class="mouth"></div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="belly"></div>
+            </div>
+        </div>
+    
+        <section class="chatBalloon">
+            <p class="speaker"> Jaapie de aap</p>
+            <p id="text"></p>
+        </section>
+    
+        
+    </section>
 </body>
 </html>
