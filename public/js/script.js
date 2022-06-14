@@ -1,8 +1,17 @@
 const buttons = document.querySelectorAll('#controls li i')
 const slider = document.querySelector('.slider-wrapper ul:first-of-type')
 const zelf = document.querySelector('#zelf')
+const detective = document.querySelector('#detective')
+const head = document.querySelector('.head')
+const eyes = document.querySelectorAll('.eyes_area div')
+const speech = new SpeechSynthesisUtterance()
 
-import { welcome, chooseZelf } from './modules/chatbot.js'
+speech.lang = 'nl'
+speech.rate = .75
+speech.volume = 1
+speech.pitch = 4
+
+import { welcome, chooseZelf, chooseDetective } from './modules/chatbot.js'
 
 buttons[0].classList.add('disable')
 
@@ -28,13 +37,32 @@ buttons.forEach(button => {
     })
 })
 
-window.addEventListener('load', () => {
-    welcome()
+head.addEventListener('click', () => {
+
+    head.classList.add('wobbly')
+
+    const words = ['he!', 'au!', 'niet doen!', 'stop daarmee!']
+    const randomNumb = Math.floor(Math.random() * words.length)
+
+    speech.text = words[randomNumb]
+
+    speechSynthesis.speak(speech)
+
+    eyes.forEach(eye => {
+        eye.classList.add('dizzy')
+
+        setTimeout(() => {
+            eye.classList.remove('dizzy')
+            head.classList.remove('wobbly')
+        }, 2000)
+    })
 })
 
-zelf.addEventListener('click', () => {
-    chooseZelf()
-})
+window.addEventListener('load', welcome)
+zelf.addEventListener('click', chooseZelf)
+detective.addEventListener('click', chooseDetective)
+
+
 
 
 
