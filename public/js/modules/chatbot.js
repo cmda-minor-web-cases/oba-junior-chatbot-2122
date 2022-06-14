@@ -73,6 +73,8 @@ detectiveKeuzes.forEach(keuzes => {
             })
             .typeString(`Wat leuk! Dit is wat ik kan vinden over <b>${p.textContent}</b>!`)
             .start()
+
+        getData(p.textContent)
     })
 })
 
