@@ -168,6 +168,30 @@
     height: 0;
 }
 
+#results {
+    width: 60%;
+    margin: 0 auto;
+    overflow-x: scroll;
+    display: flex;
+    padding: 1rem;
+}
+
+#results a {
+    width: 12rem;
+    margin-right: 2.5rem;
+}
+
+#results a:last-of-type {
+    margin-right: 0;
+}
+
+#results a img {
+    aspect-ratio: 1/1;
+    width: 12rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 5px var(--purple-shadow);
+}
+
 /* css for the character */
 .character {
     position: absolute;

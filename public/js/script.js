@@ -3,11 +3,13 @@ const slider = document.querySelector('.slider-wrapper ul:first-of-type')
 const zelf = document.querySelector('#zelf')
 const detective = document.querySelector('#detective')
 const head = document.querySelector('.head')
+const resultList = document.querySelector('#results')
 
 import { welcome, chooseZelf, chooseDetective } from './modules/chatbot.js'
 import { dizzyMonkey } from './modules/dizzyMonkey.js'
 
 buttons[0].classList.add('disable')
+resultList.classList.add('hidden')
 
 buttons.forEach(button => {
     button.addEventListener('click', (e) => {

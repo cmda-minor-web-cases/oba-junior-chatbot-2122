@@ -63,18 +63,20 @@ const chooseDetective = () => {
 
 detectiveKeuzes.forEach(keuzes => {
     keuzes.addEventListener('click', (e) => {
-        let p = e.target.querySelector('p')
+
+        detectives.classList.remove('choices')
+        detectives.classList.add('hidden')
         
         typewriter
             .deleteAll(1)
             .callFunction(() => {
-                speech.text = `Wat leuk! Dit is wat ik kan vinden over ${p.textContent}!`
+                speech.text = `Wat leuk! Dit is wat ik kan vinden over ${e.target.textContent}!`
                 speechSynthesis.speak(speech)
             })
-            .typeString(`Wat leuk! Dit is wat ik kan vinden over <b>${p.textContent}</b>!`)
+            .typeString(`Wat leuk! Dit is wat ik kan vinden over <b>${e.target.textContent}</b>!`)
             .start()
 
-        getData(p.textContent)
+        getData(e.target.textContent)
     })
 })
 
