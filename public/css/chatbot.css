@@ -127,6 +127,19 @@
     cursor: pointer;
 }
 
+.refresh {
+    position: absolute;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    color: var(--purple);
+    border: 0px solid transparent;
+    left: 4.8rem;
+    top: 1.5rem;
+    padding: .5rem .8rem;
+    background-color: white;
+}
+
 .chatBalloon {
     position: absolute;
     bottom: 5rem;
@@ -189,7 +202,7 @@
     aspect-ratio: 1/1;
     width: 12rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0 5px var(--purple-shadow);
+    box-shadow: -3px 3px 0 2px var(--purple-shadow);
 }
 
 /* css for the character */

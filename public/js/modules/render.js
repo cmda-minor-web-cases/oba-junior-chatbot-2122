@@ -5,6 +5,7 @@ const render = (results) => {
     resultList.classList.remove('hidden')
 
     results.forEach(book => {
+        if (book.coverimages[0]) {
         const item = document.createElement('a')
         item.href = `boek/${book.id}`
 
@@ -14,6 +15,7 @@ const render = (results) => {
 
         item.appendChild(img)
         resultList.appendChild(item)
+        }
     })
 }
 

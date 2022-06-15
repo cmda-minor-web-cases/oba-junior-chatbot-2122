@@ -4,9 +4,11 @@ const zelf = document.querySelector('#zelf')
 const detective = document.querySelector('#detective')
 const head = document.querySelector('.head')
 const resultList = document.querySelector('#results')
+const refresh = document.querySelector('.refresh')
 
 import { welcome, chooseZelf, chooseDetective } from './modules/chatbot.js'
 import { dizzyMonkey } from './modules/dizzyMonkey.js'
+import { refreshFunc } from './modules/refresh.js'
 
 buttons[0].classList.add('disable')
 resultList.classList.add('hidden')
@@ -31,9 +33,17 @@ buttons.forEach(button => {
     })
 })
 
+refresh.addEventListener('click', () => {
+    refreshFunc()
+    welcome()
+})
+
 head.addEventListener('click', dizzyMonkey) // makes the monkey dizzy
+
 window.addEventListener('load', welcome) // when the window loads, monkey will start speaking
+
 zelf.addEventListener('click', chooseZelf) // when pressing on "zelf lezen"
+
 detective.addEventListener('click', chooseDetective) // when pressing on "detective"
 
 

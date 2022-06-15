@@ -18,6 +18,7 @@ speech.pitch = 1.5
 
 const welcome = () => {
     typewriter
+    .deleteAll(1)
     .callFunction(() => {
         speech.text = 'Wil je zelf gaan lezen of wil je dat iemand gaat voorlezen?'
 
