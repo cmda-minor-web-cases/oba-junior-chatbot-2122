@@ -23,7 +23,7 @@ const checkChoice = (choice) => {
             utterance('Ik ben dol op dieren! Welk onderwerp over dieren vind jij leuk?', secondChoices, animalChoices)
             break;
         case 'school':
-            utterance('School, wat leuk! Welk onderwerp over school vind jij leuk?.', secondChoices, schoolChoices)
+            utterance('School, wat leuk! Welk onderwerp over school vind jij leuk?', secondChoices, schoolChoices)
             break;
         case 'fairytales':
             utterance('Sprookjes, mijn favoriet! Welk onderwerp over sprookjes vind jij leuk?', secondChoices, fairyChoices)

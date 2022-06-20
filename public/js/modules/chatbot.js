@@ -14,20 +14,25 @@ speech.pitch = 1
 
 const utterance = (speechUtterance, firstEl, secondEl) => {
     typewriter
+    .callFunction(() => {
+        if (firstEl) {
+            firstEl.classList.remove('choices')
+            firstEl.classList.add('hidden')
+        }
+    })
     .deleteAll(1)
     .callFunction(() => {
         speech.text = speechUtterance
         speechSynthesis.speak(speech)
     })
     .typeString(speechUtterance)
+    .callFunction(() => {
+        if (secondEl) {
+            secondEl.classList.remove('hidden')
+            secondEl.classList.add('choices')
+        }
+    })
     .start()
-
-    if (firstEl && secondEl) {
-        firstEl.classList.remove('choices')
-        firstEl.classList.add('hidden')
-        secondEl.classList.remove('hidden')
-        secondEl.classList.add('choices')
-    }
 }
 
 const finalChoice = (choice, hiddenEl) => {

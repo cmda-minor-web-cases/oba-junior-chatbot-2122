@@ -3,6 +3,7 @@ const slider = document.querySelector('.slider-wrapper ul:first-of-type')
 const head = document.querySelector('.head')
 const resultList = document.querySelector('#results')
 const refresh = document.querySelector('.refresh')
+const firstChoices = document.querySelector('#firstChoices')
 const firstButtons = document.querySelectorAll('#firstChoices button')
 const secondButtons = document.querySelectorAll('#secondChoices button')
 const thirdChoices = document.querySelectorAll('#detectiveChoices, #animalChoices, #schoolChoices, #fairyChoices')
@@ -38,14 +39,13 @@ resultList.classList.add('hidden')
 
 refresh.addEventListener('click', () => {
     refreshFunc()
-    utterance('Wil je zelf gaan lezen of wil je dat iemand gaat voorlezen?')
+    utterance('Wil je zelf gaan lezen of wil je dat iemand gaat voorlezen?', undefined, firstChoices)
 })
 
 head.addEventListener('click', dizzyMonkey) // makes the monkey dizzy
 
 window.addEventListener('load', () => {
-    refreshFunc()
-    utterance('Wil je zelf gaan lezen of wil je dat iemand gaat voorlezen?')
+    utterance('Wil je zelf gaan lezen of wil je dat iemand gaat voorlezen?', undefined, firstChoices)
 }) // when the window loads, monkey will start speaking
 
 firstButtons.forEach(button => {
