@@ -12,7 +12,7 @@ const reqOne = axios.get(spannend)
 const reqTwo = axios.get(monsters)
 const reqThree = axios.get(prinsessen)
 
-router.get('/', async (req, res, next) => {
+router.get('/', async (req, res) => {
     axios
     .all([reqOne, reqTwo, reqThree])
     .then(
