@@ -8,11 +8,6 @@ const secondButtons = document.querySelectorAll('#secondChoices button')
 const thirdChoices = document.querySelectorAll('#detectiveChoices, #animalChoices, #schoolChoices, #fairyChoices')
 const thirdChoicesArr = [...thirdChoices]
 
-const detectives = document.querySelector('#detectiveChoices')
-const animalChoices = document.querySelector('#animalChoices')
-const schoolChoices = document.querySelector('#schoolChoices')
-const fairyChoices = document.querySelector('#fairyChoices')
-
 import { utterance, finalChoice } from './modules/chatbot.js'
 import { checkChoice } from './modules/checkChoice.js'
 import { dizzyMonkey } from './modules/dizzyMonkey.js'

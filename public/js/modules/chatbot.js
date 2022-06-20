@@ -1,6 +1,4 @@
 const text = document.querySelector('#text')
-const detectives = document.querySelector('#detectiveChoices')
-const detectiveKeuzes = document.querySelectorAll('#detectiveChoices button')
 const typewriter = new Typewriter(text, {
     loop: false,
     delay: 50
