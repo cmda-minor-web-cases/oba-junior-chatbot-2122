@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head')  %>
+    <title><%= title %></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/detail.css">
+    <script src="/js/detail.js" type="module" defer></script>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <section class="detail">
+            <%- include('../partials/backButton')%>
+            <span>
+                <img src="<%= book.coverimages[1] %> " alt="kaft van <%= book.titles[0] %> ">
+                <div></div>
+            </span>
+            <span>
+                <h2><%= book.titles[0] %> </h2>
+                <p><strong>Auteur:</strong> <%= book.authors[0] %> </p>
+                <p><strong>Jaar:</strong> <%= book.year %> </p>
+
+                <blockquote><%= book.summaries[0] %> </blockquote>
+                <a href="<%= book.detailLink %> ">Reserveer dit boek</a>
+            </span>
+        </section>
+    </main>
+</body>
+</html>
