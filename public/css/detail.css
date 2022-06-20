@@ -1,0 +1,88 @@
+:root {
+    --bg-blue: #c1e5fb;
+
+    --purple: #773278;
+    --green: #439752;
+    --pink: #C62F7B;
+    --blue: #48A0D5;
+    --red: #C63834;
+}
+
+main {
+    height: 85vh;
+}
+
+.detail {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 1rem;
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+main section img {
+    position: relative;
+    display: flex;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    
+}
+
+.detail span:first-of-type, .back-btn-container {
+    background-color: var(--purple);
+    border-radius: 48% 52% 48% 52% / 69% 30% 70% 31% ;
+    height: fit-content;
+    margin-right: 2rem;
+}
+
+.detail span:last-of-type {
+    padding: 2rem;
+}
+
+.detail span:last-of-type h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: rgb(41, 41, 41);
+}
+
+.detail span:last-of-type h2:hover {
+    overflow: visible;
+    text-overflow: none;
+}
+
+blockquote {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 30rem;
+}
+
+a {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #773278;
+    color: white;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+/* Back button */
+
+.back-btn-container {
+	color: #fff;
+	padding: .5em;
+}
+
+.back-btn-container:hover{
+    cursor: pointer;
+}
+
+.fa.fa-arrow-left {
+	font-size: 2em;
+}
