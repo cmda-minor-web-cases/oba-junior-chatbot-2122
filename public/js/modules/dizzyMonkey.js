@@ -2,7 +2,7 @@ const head = document.querySelector('.head')
 const eyes = document.querySelectorAll('.eyes_area div')
 const speech = new SpeechSynthesisUtterance()
 
-speech.lang = 'nl'
+speech.lang = 'BE-nl'
 speech.rate = .75
 speech.volume = 1
 speech.pitch = 4
