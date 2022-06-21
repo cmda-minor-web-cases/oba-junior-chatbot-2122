@@ -18,28 +18,34 @@
                 <ul>
                     <% if (spannend.length > 0) { %>
                         <% spannend.forEach(book => { %>
+                            <% if (book.coverimages[1] !== undefined) { %>
                             <a href="boek/<%= book.id %> ">
                                 <img src="<%= book.coverimages[1] %> " alt="kaft van <%= book.titles[0] %> ">
                             </a> 
-                    <% })} %> 
+                    <% }})} %> 
                 </ul>
-                <ul id="controls">
-                    <li><i class="fa fa-arrow-left"></i></li>
+                <ul class="controls">
+                    <li class="disable"><i class="fa fa-arrow-left"></i></li>
                     <li><i class="fa fa-arrow-right"></i></li>
                 </ul>
             </div>
         </section>
 
         <section class="wrapper">
-            <h1>Monsters</h1>
+            <h1>Monsterlijke verhalen</h1>
             <div class="slider-wrapper">
                 <ul>
                     <% if (monsters.length > 0) { %>
                         <% monsters.forEach(book => { %>
+                            <% if (book.coverimages[1] !== undefined) { %> 
                             <a href="boek/<%= book.id %> ">
                                 <img src="<%= book.coverimages[1] %> " alt="kaft van <%= book.titles[0] %> ">
                             </a> 
-                    <% })} %> 
+                    <% }})} %> 
+                </ul>
+                <ul class="controls">
+                    <li class="disable"><i class="fa fa-arrow-left"></i></li>
+                    <li><i class="fa fa-arrow-right"></i></li>
                 </ul>
             </div>
         </section>
@@ -50,10 +56,15 @@
                 <ul>
                     <% if (prinsessen.length > 0) { %>
                         <% prinsessen.forEach(book => { %>
+                            <% if (book.coverimages[1] !== undefined) { %> 
                             <a href="boek/<%= book.id %> ">
                                 <img src="<%= book.coverimages[1] %> " alt="kaft van <%= book.titles[0] %> ">
                             </a> 
-                    <% })} %> 
+                    <% }})} %> 
+                </ul>
+                <ul class="controls">
+                    <li class="disable"><i class="fa fa-arrow-left"></i></li>
+                    <li><i class="fa fa-arrow-right"></i></li>
                 </ul>
             </div>
         </section>

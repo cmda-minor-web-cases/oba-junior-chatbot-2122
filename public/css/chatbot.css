@@ -28,6 +28,7 @@
     box-shadow: 0px 0px 5px rgba(0,0,0,.5);
     transition: 200ms;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .chatbutton:hover {
@@ -118,9 +119,9 @@
     position: absolute;
     left: 1.5rem;
     top: 1.5rem;
-    background-color: white;
+    background-color: var(--purple);
+    color: white;
     border: 0px solid transparent;
-    color: var(--purple);
     padding: .5rem .8rem;
     border-radius: 50%;
     font-size: 1.3rem;
@@ -132,12 +133,12 @@
     font-size: 1.3rem;
     cursor: pointer;
     border-radius: 50%;
-    color: var(--purple);
+    background-color: var(--purple);
+    color: white;
     border: 0px solid transparent;
     left: 4.8rem;
     top: 1.5rem;
     padding: .5rem .8rem;
-    background-color: white;
 }
 
 .chatBalloon {
@@ -206,6 +207,13 @@
 }
 
 /* css for the character */
+.characterButton {
+    transform: scale(.6);
+    left: 7%;
+    position: absolute;
+    bottom: -1rem;
+}
+
 .character {
     position: absolute;
     bottom: 0;

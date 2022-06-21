@@ -8,9 +8,6 @@ const refreshFunc = () => {
     })
 
     resultList.innerHTML = ''
-
-    allSpan[0].classList.remove('hidden')
-    allSpan[0].classList.add('choices')
 }
 
 export {

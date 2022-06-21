@@ -57,10 +57,6 @@ main section img {
 blockquote {
     margin-top: 2rem;
     margin-bottom: 3rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 30rem;
 }
 
 a {
@@ -75,14 +71,13 @@ a {
 /* Back button */
 
 .back-btn-container {
-	color: #fff;
-	padding: .5em;
-}
-
-.back-btn-container:hover{
+	background-color: var(--purple);
+    color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    padding: 1rem;
+    border-radius: 50%;
+    height: fit-content;
     cursor: pointer;
-}
-
-.fa.fa-arrow-left {
-	font-size: 2em;
+    font-size: 1.1rem;
+    border: 0px solid transparent;
 }

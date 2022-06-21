@@ -1,5 +1,3 @@
-const buttons = document.querySelectorAll('#controls li i')
-const slider = document.querySelector('.slider-wrapper ul:first-of-type')
 const head = document.querySelector('.head')
 const resultList = document.querySelector('#results')
 const refresh = document.querySelector('.refresh')
@@ -7,35 +5,33 @@ const firstChoices = document.querySelector('#firstChoices')
 const firstButtons = document.querySelectorAll('#firstChoices button')
 const secondButtons = document.querySelectorAll('#secondChoices button')
 const thirdChoices = document.querySelectorAll('#detectiveChoices, #animalChoices, #schoolChoices, #fairyChoices')
+const chatbutton = document.querySelector('.chatbutton')
 const thirdChoicesArr = [...thirdChoices]
+const chatbotBtn = document.querySelectorAll('.close, .chatbutton')
+const chatbotBtnArr = [...chatbotBtn]
+const allSections = document.querySelectorAll('.slider-wrapper')
+const allSectionsArr = [...allSections]
 
 import { utterance, finalChoice } from './modules/chatbot.js'
 import { checkChoice } from './modules/checkChoice.js'
 import { dizzyMonkey } from './modules/dizzyMonkey.js'
 import { refreshFunc } from './modules/refresh.js'
+import { closeOpen } from './modules/closeOpen.js'
+import { buttonScroll } from './modules/buttonScroll.js'
 
-buttons[0].classList.add('disable')
 resultList.classList.add('hidden')
 
-// buttons.forEach(button => {
-//     button.addEventListener('click', (e) => {
-//         if (Array.prototype.indexOf.call(buttons, e.target) === 0) {
-//             slider.scrollLeft -= slider.offsetWidth
-//             buttons[1].classList.remove('disable')
+allSectionsArr.forEach(section => {
+    const buttons = section.querySelectorAll('.controls li')
+    const buttonsArr = [...buttons]
+    const slider = section.querySelector('ul:first-of-type')
 
-//             if (slider.scrollLeft === 0) {
-//                 buttons[0].classList.add('disable')
-//             }
-//         } else if (Array.prototype.indexOf.call(buttons, e.target) === 1) {
-//             slider.scrollLeft += slider.offsetWidth
-//             buttons[0].classList.remove('disable')
-
-//             if (slider.scrollLeft >= 2000) {
-//                 buttons[1].classList.add('disable')
-//             }
-//         }
-//     })
-// })
+    buttonsArr.forEach(button => {
+        button.addEventListener('click', (e) => {
+            buttonScroll(e.currentTarget, buttonsArr, slider)
+        })
+    })
+})
 
 refresh.addEventListener('click', () => {
     refreshFunc()
@@ -44,7 +40,7 @@ refresh.addEventListener('click', () => {
 
 head.addEventListener('click', dizzyMonkey) // makes the monkey dizzy
 
-window.addEventListener('load', () => {
+chatbutton.addEventListener('click', () => {
     utterance('Wil je zelf gaan lezen of wil je dat iemand gaat voorlezen?', undefined, firstChoices)
 }) // when the window loads, monkey will start speaking
 
@@ -70,6 +66,14 @@ thirdChoicesArr.forEach(section => {
         })
     })
 })
+
+chatbotBtnArr.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const currentClass = e.currentTarget.classList.value
+        closeOpen(currentClass)
+    })
+})
+
 
 
 
