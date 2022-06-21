@@ -3,9 +3,7 @@ const buttonScroll = (button, buttonsArr, slider) => {
         slider.scrollLeft -= slider.offsetWidth
         buttonsArr[1].classList.remove('disable')
 
-        console.log(slider.scrollWidth - slider.clientWidth)
-
-        if (slider.scrollLeft < 1008) {
+        if (slider.scrollLeft < (slider.offsetWidth + 1)) {
             buttonsArr[0].classList.add('disable')
         }
          
@@ -13,9 +11,7 @@ const buttonScroll = (button, buttonsArr, slider) => {
         slider.scrollLeft += slider.offsetWidth
         buttonsArr[0].classList.remove('disable')
 
-        console.log(slider.scrollLeft)
-
-        if (slider.scrollLeft > (slider.scrollWidth - slider.clientWidth) - (slider.offsetWidth - 1)) {
+        if (slider.scrollLeft > (slider.scrollWidth - slider.clientWidth) - (slider.offsetWidth + 1)) {
             buttonsArr[1].classList.add('disable')
         }
     }
