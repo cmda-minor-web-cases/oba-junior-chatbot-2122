@@ -1,5 +1,5 @@
-const head = document.querySelector('.head')
-const eyes = document.querySelectorAll('.eyes_area div')
+const head = document.querySelector('.character .head')
+const eyes = document.querySelectorAll('.character .eyes_area div')
 const speech = new SpeechSynthesisUtterance()
 
 speech.lang = 'BE-nl'

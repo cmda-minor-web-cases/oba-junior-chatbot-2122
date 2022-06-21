@@ -1,4 +1,5 @@
 const text = document.querySelector('#text')
+const loader = document.querySelector('#loader')
 const typewriter = new Typewriter(text, {
     loop: false,
     delay: 50
@@ -19,6 +20,9 @@ const utterance = (speechUtterance, firstEl, secondEl) => {
             firstEl.classList.remove('choices')
             firstEl.classList.add('hidden')
         }
+
+        loader.classList.add('pulse')
+
     })
     .deleteAll(1)
     .callFunction(() => {
@@ -27,6 +31,8 @@ const utterance = (speechUtterance, firstEl, secondEl) => {
     })
     .typeString(speechUtterance)
     .callFunction(() => {
+        loader.classList.remove('pulse')
+
         if (secondEl) {
             secondEl.classList.remove('hidden')
             secondEl.classList.add('choices')
