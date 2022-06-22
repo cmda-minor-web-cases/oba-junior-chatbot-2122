@@ -1,7 +1,6 @@
 # ObA-junior Chatbot
 
-![Home page](https://user-images.githubusercontent.com/66092262/174883876-6d3260c3-9108-4226-8974-c3d67fb8c3d5.png)
-![Chat Bot](https://user-images.githubusercontent.com/66092262/173659086-dc684564-b48f-44bc-85f6-3d58b31861e7.png)
+<img width="100%" alt="Schermafbeelding 2022-06-22 om 21 31 12" src="https://user-images.githubusercontent.com/66092262/175120822-194951e3-6362-4b3e-bb0b-c4e3c3912e08.png">
 
 # Live Link
 :globe_with_meridians: [Link naar live app](https://oba-junior-chatbot.herokuapp.com/)
