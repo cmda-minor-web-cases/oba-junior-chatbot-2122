@@ -4,7 +4,7 @@
 ![Chat Bot](https://user-images.githubusercontent.com/66092262/173659086-dc684564-b48f-44bc-85f6-3d58b31861e7.png)
 
 # Live Link
-:globe_with_meridians: [Link naar live app](https://www.#.com/.....)
+:globe_with_meridians: [Link naar live app](https://oba-junior-chatbot.herokuapp.com/)
 
 
 # Table of Contents
