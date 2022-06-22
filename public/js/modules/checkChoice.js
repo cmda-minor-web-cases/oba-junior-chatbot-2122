@@ -8,11 +8,12 @@ const fairyChoices = document.querySelector('#fairyChoices')
 
 import { utterance } from "./chatbot.js";
 
-const checkChoice = (choice) => {
+const checkChoice = (choice) => { // function that checks what button the user has clicked. Parameter is the id of the button that the user pressed
     switch (choice) { // check if the button is reading or listening
-        case 'zelf':
+        case 'zelf': 
+            // in the utterance function, first pass along the text you want to be said, then the element that should be hidden and finally the element that should be shown.
             utterance('Wat leuk dat je zelf gaat lezen! Waar wil je over gaan lezen?', firstChoices, secondChoices)
-            break;
+            break; 
         case 'voor':
             utterance('Wat leuk dat je voorgelezen wilt worden! Waar wil je over voorgelezen gaan worden?', firstChoices, secondChoices)
             break;

@@ -21,10 +21,10 @@ import { buttonScroll } from './modules/buttonScroll.js'
 
 resultList.classList.add('hidden')
 
-allSectionsArr.forEach(section => {
-    const buttons = section.querySelectorAll('.controls li')
-    const buttonsArr = [...buttons]
-    const slider = section.querySelector('ul:first-of-type')
+allSectionsArr.forEach(section => { // iterate over all the sections
+    const buttons = section.querySelectorAll('.controls li') // get all the buttons
+    const buttonsArr = [...buttons] // convert nodeList to array with spread operator
+    const slider = section.querySelector('ul:first-of-type') // get the slider in the section
 
     buttonsArr.forEach(button => {
         button.addEventListener('click', (e) => {
