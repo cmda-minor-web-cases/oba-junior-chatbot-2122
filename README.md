@@ -1,6 +1,6 @@
 # ObA-junior Chatbot
 
-![Home Screen](https://user-images.githubusercontent.com/15678757/174639324-b650563f-80cd-4572-b3b4-ff8e81449247.png)
+![Home page](https://user-images.githubusercontent.com/66092262/174883876-6d3260c3-9108-4226-8974-c3d67fb8c3d5.png)
 ![Chat Bot](https://user-images.githubusercontent.com/66092262/173659086-dc684564-b48f-44bc-85f6-3d58b31861e7.png)
 
 # Live Link
