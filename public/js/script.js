@@ -1,4 +1,4 @@
-const head = document.querySelector('.character .head')
+const head = document.querySelector('.character .body')
 const resultList = document.querySelector('#results')
 const refresh = document.querySelector('.refresh')
 const firstChoices = document.querySelector('#firstChoices')

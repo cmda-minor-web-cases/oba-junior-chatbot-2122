@@ -249,10 +249,17 @@
 
 .dizzy::after {
     display: inline-block;
-    content: '\00d7';
     position: absolute;
     top: -.5rem;
     transform: scale(1.2);
+}
+
+.dizzy:first-of-type::after {
+    content: '>';
+}
+
+.dizzy:last-of-type::after {
+    content: '<';
 }
 
 .left_ear {
