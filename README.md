@@ -2,14 +2,13 @@
 
 <img width="100%" margin="0 auto" padding="20px" alt="Schermafbeelding 2022-06-22 om 21 31 12" src="https://user-images.githubusercontent.com/66092262/175120822-194951e3-6362-4b3e-bb0b-c4e3c3912e08.png">
 
-# Live Link
-:globe_with_meridians: [Link naar live app](https://oba-junior-chatbot.herokuapp.com/)
-
+# :globe_with_meridians: Live Link
+[Link naar live app](https://oba-junior-chatbot.herokuapp.com/)
 
 # Table of Contents
 - [Live link ](#live-link)
 - [Design Challenge](#design-challenge)
-- [Beschrijving](#bookBeschrijving)
+- [Beschrijving](#Beschrijving)
 - [Opdrachtegvers](#opdrachtgevers)
 - [User stories](#user-stories)
 - [Data](#data)
@@ -18,10 +17,10 @@
 - [Licentie](#licentie)
 
 
-## Design challenge
+## 🤔 Design challenge
 > Ontwerp en ontwikkel een chatbot voor OBA Junior, die jeugdige gebruikers (rond 6 jaar), helpt informatie uit de OBA collectie te onstluiten.
 
-# :book:Beschrijving
+## :book: Beschrijving
 
 Opgroeien in een digitale wereld betekent van jongs af aan digitale competenties en vaardigheden ontwikkelen.
 Digitale transacties zowel formeel (bank, overheid) als informeel (afspraken maken) is meer en meer de norm. Veel van deze transacties verlopen via conversational- of decision tree modellen.
@@ -36,7 +35,7 @@ Onze ontwerpvraag luidt dan ook als volgt:
 De ObA-Junior chatbot biedt de mogelijkheid. De chatbot helpt kinderen van de leeftijd van 6 jaar door de website van de ObA heen. Door middel van leuke en vriendelijke helper wordt het kind begeleid naar een boek of andere media content van de ObA. Voor volwassen is de ux, ui en logica heel anders dan voor kinderen. Voor oba junior hebben we een chatbot ontwikkeld die specifiek op jeugd (4-8) is gericht qua ux, ui, botlogica en inhoud.
 
 
-## Opdrachtgevers
+## 👥 Opdrachtgevers
 
 Product Owners:  
 **Leonore Snoek**, senior service designer @ oba ontwerplab. Hiervoor UX coach @ growth tribe & civic service designer bij NYC Mayor's office for economic opportunity. 
@@ -53,16 +52,15 @@ Voor de chatbot hebben wij 3 user stories waar mee wij rekening gaan houden tijd
 
 3. Als jeugdige gebruiker van 6 wil ik, samen met mijn moeder en/of vader, aan de hand van het stellen van vragen aan de chatbot, kinderboeken uit de collectie van de OBA vinden, zodat we die samen kunnen gaan lenen.  
 
-## Data
-De OBA maakt gebruik van de OBI4wan chat engine waarvoor studenten een crah course krijgen aangeboden.  
-De OBA collectie is via een API te ontsluiten.
+## 📊 Data
+We hebben in onze applicatie gebruik gemaakt van de OBA API.
 
-## :gear:Installatie
+## :gear: Installatie
 1. Clone deze repo
 ```
 git clone https://github.com/basv1996/oba-junior-chatbot.git
 ```
-2. Zzorg dat je in de juiste map zit
+2. Zorg dat je in de juiste map zit
 ```
 cd oba-junior-chatbot
 ```
@@ -74,7 +72,6 @@ npm install
 ```
 PUB_KEY = '****cd*****d87****d8f***fb4*****'
 ```
-
 5. Start de applicatie
 ```
 npm start
@@ -84,12 +81,18 @@ npm start
 npm run dev
 ```
 
-## Contribiteurs
+## 📦 NPM packages
+* axios (^0.27.2)
+* dotenv (^16.0.1)
+* ejs (^3.1.8)
+* express (^4.18.1)
+* node-fetch (^2.6.0)
 
+## 👨🏻‍💻 Contribiteurs
 - [Bas Vugts](https://github.com/basv1996)
 - [Jody Lorist](https://github.com/jody29)
 
-## Licentie
+## © Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
