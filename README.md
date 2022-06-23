@@ -80,6 +80,11 @@ npm start
 npm run dev
 ```
 
+## 🔮 Toekomstige ideeën
+* Gebruiker kan zelf een karakter kiezen
+* Gebruiker kan na de eerste keer de dialoog van de chatbot overslaan
+* Meer interactie toevoegen aan het karakter
+
 ## 📦 NPM packages
 * axios (^0.27.2)
 * dotenv (^16.0.1)
