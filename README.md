@@ -92,7 +92,7 @@ npm run dev
 * express (^4.18.1)
 * node-fetch (^2.6.0)
 
-## 👨🏻‍💻 Contribiteurs
+## 👨🏻‍💻 Developers
 - [Bas Vugts](https://github.com/basv1996)
 - [Jody Lorist](https://github.com/jody29)
 
