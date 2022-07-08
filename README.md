@@ -43,6 +43,7 @@ Product Owners:
 
 
 ### User stories
+
 Voor de chatbot hebben wij 3 user stories waar mee wij rekening gaan houden tijdens het ontwerpen en maken van de chatbot. 
 
 1. Als jeugdige gebruiker van 6 wil ik op speelse wijzen leren wat een chatbot is, zodat ik deze kan gebruiken om items uit de collectie van de OBA te vinden (navigeren).
@@ -97,3 +98,4 @@ npm run dev
 - [Jody Lorist](https://github.com/jody29)
 
 ## © Licentie
+MIT
