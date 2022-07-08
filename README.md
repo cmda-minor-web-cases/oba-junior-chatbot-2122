@@ -64,9 +64,3 @@ Op maandag 23 mei starten met voor onderzoek:
 Inspriatie:
 Code voor kinderrechten https://codevoorkinderrechten.nl/ &
 Ongoing onderzoek naar UI populaire kidnerapps https://drive.google.com/file/d/11H6T_vKnFOgVEC2nZplQmlyZ0JFBWLhS/view?usp=sharing
-
-## Licentie
-
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).
