@@ -1,0 +1,31 @@
+{
+  "name": "oba-junior-chatbot",
+  "version": "1.0.0",
+  "description": "![How-an-AI-Chatbot-Works-Featured-Image](https://user-images.githubusercontent.com/16196640/169023877-22d6ee0a-4d9e-4bce-abcc-bccd8ef6f506.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basv1996/oba-junior-chatbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basv1996/oba-junior-chatbot/issues"
+  },
+  "homepage": "https://github.com/basv1996/oba-junior-chatbot#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

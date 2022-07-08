@@ -1,0 +1,110 @@
+<section class="chatbutton">
+    <div class="characterButton">
+        <div class="head">
+            <div class="left_ear"></div>
+            <div class="right_ear"></div>
+            <div class="eyes_area">
+                <div class="eye_left"></div>
+                <div class="eye_right"></div>
+            </div>
+            <div class="mouth_area">
+                <div class="mouth"></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="belly"></div>
+        </div>
+    </div>
+</section>
+<section class="chatbot">
+    <section class="inner-chatbot">
+        <button class="close"><i class="fa fa-close"></i></button>
+        <button class="refresh"><i class="fa fa-refresh"></i></button>
+        
+        <span id="firstChoices" class="hidden">
+            <button id="zelf">
+                <img src="/icons/lezen.png" alt="zelf lezen">
+                <p>Zelf lezen</p>
+            </button>
+            <button id="voor">
+                <img src="/icons/voorlezen.png" alt="voorlezen">
+                <p>Voorlezen</p>
+            </button>
+        </span>
+
+        <span id="secondChoices" class="hidden">
+            <button id="detective">
+                <img src="/icons/detective.png" alt="detective">
+                <p>Detective</p>
+            </button>
+            <button id="animals">
+                <img src="/icons/dieren.png" alt="dieren">
+                <p>Dieren</p>
+            </button>
+            <button id="school">
+                <img src="/icons/school.png" alt="school">
+                <p>School</p>
+            </button>
+            <button id="fairytales">
+                <img src="/icons/sprookjes.png" alt="sprookjes">
+                <p>Sprookjes</p>
+            </button>
+        </span>
+
+        <span id="detectiveChoices" class="hidden">
+            <button>Diefstallen</button>
+            <button>Geheimen</button>
+            <button>Verdwijningen</button>
+        </span>
+
+        <span id="animalChoices" class="hidden">
+            <button>Katten</button>
+            <button>Honden</button>
+            <button>Dierentuinen</button>
+            <button>Huisdieren</button>
+        </span>
+
+        <span id="schoolChoices" class="hidden">
+            <button>Schoolleven</button>
+            <button>Feesten</button>
+            <button>Boosheid</button>
+        </span>
+
+        <span id="fairyChoices" class="hidden">
+            <button>Draken</button>
+            <button>Reuzen</button>
+            <button>Prinsessen</button>
+            <button>Ridders</button>
+        </span>
+
+        <span id="results"></span>
+    </section>
+
+
+
+    <div class="character">
+        <div class="head">
+            <div class="left_ear"></div>
+            <div class="right_ear"></div>
+            <div class="eyes_area">
+                <div class="eye_left"></div>
+                <div class="eye_right"></div>
+            </div>
+            <div class="mouth_area">
+                <div class="mouth"></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="belly"></div>
+        </div>
+    </div>
+
+    <section class="chatBalloon">
+        <p class="speaker"> Jaapie de aap</p>
+        <p id="text"></p>
+    </section>
+
+    <%- include('./loader') %> 
+
+    
+</section>

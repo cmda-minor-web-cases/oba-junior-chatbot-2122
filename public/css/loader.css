@@ -1,0 +1,35 @@
+#load_container {
+    position: absolute;
+    transform: scale(1.5);
+}
+
+.pulse {
+    width: 22.4px;
+    height: 22.4px;
+    border-radius: 50%;
+    background: #773278;
+    box-shadow: 0 0 0 0 rgba(119,50,120,0.5);
+    animation: pulse-load 0.8999999999999999s infinite linear;
+    position: relative;
+ }
+ 
+ .pulse:before,
+ .pulse:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 0 rgba(119,50,120,0.5);
+    animation: inherit;
+    animation-delay: -0.3s;
+ }
+ 
+ .pulse:after {
+    animation-delay: -0.6s;
+ }
+ 
+ @keyframes pulse-load {
+    100% {
+       box-shadow: 0 0 0 44.8px #0000;
+    }
+ }

@@ -1,0 +1,377 @@
+:root {
+    --bg-blue: #c1e5fb;
+
+    --purple: #773278;
+    --green: #439752;
+    --pink: #C62F7B;
+    --blue: #48A0D5;
+    --red: #C63834;
+    --purple-shadow: #331534;
+    --green-shadow: #1d5227;
+    --pink-shadow: #64183e;
+    --blue-shadow: #1d3e53;
+    --red-shadow: #4e1816;
+
+    --monkey-body: #D46A2D;
+    --monkey-shadow: #E79E72;
+    --monkey-mouth: #F2C8AC;
+}
+
+.chatbutton {
+    width: 7rem;
+    height: 7rem;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--bg-blue);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    transition: 200ms;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.chatbutton:hover {
+    transform: scale(1.2);
+}
+
+.chatbot {
+    background-color: var(--bg-blue);
+    position: fixed;
+    box-shadow: 0 0 5px gray;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    transform-origin: right bottom;
+    animation: open 300ms ease;
+}
+
+.inner-chatbot {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.choices {
+    display: flex;
+}
+
+.choices button {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 2rem;
+    transition: 200ms;
+    aspect-ratio: 1/1;
+    font-weight: bold;
+    color: white;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 1);
+    transform-origin: left bottom;
+    cursor: pointer;
+}
+
+.choices button img {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+}
+
+.choices button:first-of-type {
+    background-color: var(--purple);
+    box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.358), -5px 5px 0px var(--purple-shadow), -5px 5px 2px 2px rgba(0, 0, 0, 0.169);
+}
+
+.choices button:nth-of-type(2) {
+    background-color: var(--green);
+    box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.358), -5px 5px 0px var(--green-shadow), -5px 5px 2px 2px rgba(0, 0, 0, 0.169);
+}
+
+.choices button:nth-of-type(3) {
+    background-color: var(--pink);
+    box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.358), -5px 5px 0px var(--pink-shadow), -5px 5px 2px 2px rgba(0, 0, 0, 0.169);
+}
+
+.choices button:nth-of-type(4) {
+    background-color: var(--blue);
+    box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.358), -5px 5px 0px var(--blue-shadow), -5px 5px 2px 2px rgba(0, 0, 0, 0.169);
+}
+
+.choices button:active {
+    transform: scale(.95);
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.close {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    background-color: var(--purple);
+    color: white;
+    border: 0px solid transparent;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.refresh {
+    position: absolute;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--purple);
+    color: white;
+    border: 0px solid transparent;
+    left: 4.8rem;
+    top: 1.5rem;
+    padding: .5rem .8rem;
+}
+
+.chatBalloon {
+    position: absolute;
+    bottom: 5rem;
+    left: 40%;
+}
+
+.speaker {
+    background-color: var(--monkey-body);
+    width: fit-content;
+    position: absolute;
+    z-index: 200;
+    color: white;
+    border-radius: 4rem;
+    padding: .3rem 1rem;
+    top: -1rem;
+    left: 1rem;
+    font-weight: bold;
+}
+
+#text {
+    font-size: 1.2rem;
+    background-color: white;
+    box-shadow: 0 0 0 4px var(--monkey-body);
+    padding: 1.5rem 2rem;
+    position: relative;
+    border-radius: 10rem;
+    width: 30rem;
+}
+
+#text::after {
+    content: '';
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid var(--monkey-body);
+    left: -1.3rem;
+    top: 30%;
+    width: 0;
+    height: 0;
+}
+
+#results {
+    width: 60%;
+    margin: 0 auto;
+    overflow-x: scroll;
+    display: flex;
+    padding: 1rem;
+}
+
+#results a {
+    width: 12rem;
+    margin-right: 2.5rem;
+}
+
+#results a:last-of-type {
+    margin-right: 0;
+}
+
+#results a img {
+    aspect-ratio: 1/1;
+    width: 12rem;
+    border-radius: 1rem;
+    box-shadow: -3px 3px 0 2px var(--purple-shadow);
+}
+
+/* css for the character */
+.characterButton {
+    transform: scale(.6);
+    left: 7%;
+    position: absolute;
+    bottom: -1rem;
+}
+
+.character {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
+.head {
+    width: 6rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: var(--monkey-body);
+    position: absolute;
+    top: -5rem;
+    transition: 200ms;
+    transform-origin: center bottom;
+}
+
+.wobbly {
+    animation: dizzy 1s infinite ease;
+}
+
+.head:active {
+    transform: scale(.9);
+}
+
+.head:active .eye_left, .head:active .eye_right {
+    background-color: transparent;
+}
+
+.dizzy {
+    background-color: transparent!important;
+}
+
+.dizzy::after {
+    display: inline-block;
+    position: absolute;
+    top: -.5rem;
+    transform: scale(1.2);
+}
+
+.dizzy:first-of-type::after {
+    content: '>';
+}
+
+.dizzy:last-of-type::after {
+    content: '<';
+}
+
+.left_ear {
+    background-color: var(--monkey-shadow);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1rem;
+    box-shadow: 0 0 0 7px var(--monkey-body);
+}
+
+.right_ear {
+    background-color: var(--monkey-shadow);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -1rem;
+    box-shadow: 0 0 0 7px var(--monkey-body);
+}
+
+.eyes_area {
+    background-color: var(--monkey-shadow);
+    width: 4rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+.eye_left {
+    background-color: #975B30;
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+.eye_right {
+    background-color: #975B30;
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+}
+
+.mouth_area {
+    background-color: var(--monkey-mouth);
+    height: 2.5rem;
+    width: 4rem;
+    position: absolute;
+    top: 3.3rem;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+.mouth {
+    width: 3rem;
+    height: 1.5rem;
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    border: 2px solid #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 50%/0 0 50% 50%
+}
+
+.body {
+    width: 6rem;
+    height: 5rem;
+    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0% ;
+    background-color: var(--monkey-body);
+}
+
+.belly {
+    background-color: var(--monkey-shadow);
+    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0% ;
+    height: 3rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+@keyframes dizzy {
+    0% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    80% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes open {
+    from {
+        transform: scale(0);
+        border-radius: 50%;
+    }
+    to {
+        transform: scale(1);
+        border-radius: 1rem;
+    }
+}

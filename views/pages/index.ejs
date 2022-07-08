@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head')  %>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <link rel="stylesheet" href="/css/loader.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
+    <script src="/js/script.js" type="module" defer></script>
+</head>
+<body>
+    <%- include('../partials/header') %> 
+    <main>
+        <section class="wrapper">
+            <h1>Voor de echte bikkels</h1>
+            <div class="slider-wrapper">
+                <ul>
+                    <% if (spannend.length > 0) { %>
+                        <% spannend.forEach(book => { %>
+                            <% if (book.coverimages[1] !== undefined) { %>
+                            <a href="boek/<%= book.id %> ">
+                                <img src="<%= book.coverimages[1] %> " alt="kaft van <%= book.titles[0] %> ">
+                            </a> 
+                    <% }})} %> 
+                </ul>
+                <ul class="controls">
+                    <li class="disable"><i class="fa fa-arrow-left"></i></li>
+                    <li><i class="fa fa-arrow-right"></i></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <h1>Monsterlijke verhalen</h1>
+            <div class="slider-wrapper">
+                <ul>
+                    <% if (monsters.length > 0) { %>
+                        <% monsters.forEach(book => { %>
+                            <% if (book.coverimages[1] !== undefined) { %> 
+                            <a href="boek/<%= book.id %> ">
+                                <img src="<%= book.coverimages[1] %> " alt="kaft van <%= book.titles[0] %> ">
+                            </a> 
+                    <% }})} %> 
+                </ul>
+                <ul class="controls">
+                    <li class="disable"><i class="fa fa-arrow-left"></i></li>
+                    <li><i class="fa fa-arrow-right"></i></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <h1>Voor de mooiste prinsesjes</h1>
+            <div class="slider-wrapper">
+                <ul>
+                    <% if (prinsessen.length > 0) { %>
+                        <% prinsessen.forEach(book => { %>
+                            <% if (book.coverimages[1] !== undefined) { %> 
+                            <a href="boek/<%= book.id %> ">
+                                <img src="<%= book.coverimages[1] %> " alt="kaft van <%= book.titles[0] %> ">
+                            </a> 
+                    <% }})} %> 
+                </ul>
+                <ul class="controls">
+                    <li class="disable"><i class="fa fa-arrow-left"></i></li>
+                    <li><i class="fa fa-arrow-right"></i></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <%- include('../partials/chatbot') %> 
+</body>
+</html>
